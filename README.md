@@ -57,3 +57,55 @@ Você pode conferir a saída do `esp32`
     make monitor ESPPORT=/dev/tty{nome_da_porta_com}
 ```
 
+Está funcionando? Prossiga para a instalação do `micropython`
+
+# Instalando o Micropython
+
+Tenha certeza de que você está no diretório `esp-idf/` e baixe o micropython
+```bash
+    git clone https://github.com/micropython/micropython-esp32.git
+```
+
+Entre no diretório baixado e compile o mpy-cross
+```bash
+    make -C mpy-cross
+```
+
+Entre em `ports/esp32` e abra o `Makefile`
+```bash
+    cd ports/esp32 && vim Makefile
+```
+
+Abaixo da linha **24** ("# paths to ESP IDF and its components") inclua
+```bash
+   ESPIDF ?= $(HOME)/esp/esp-idf
+```
+
+Ainda no arquivo `Makefile` copie a hash armazenada em `ESPIDF_SUPHASH`
+
+
+Volte ao diretório `esp-idf` e altere para o commit compatível com o `ESPIDF` baixado
+```bash
+    git checkout <hash_copiado_no_passo_anterior>
+```
+
+Entre no diretório `micropython-esp32` e atualize os submódulos
+```bash
+    git submodule update --init
+```
+
+Entre novamente no `ports/esp32` e execute
+```bash
+    make clean 
+    make
+```
+
+Caso a compilação falhe, volte no diretório `esp-idf` e atualize os submódulos
+```bash
+    git submodule update --init --force
+```
+
+Ainda no diretório `ports/esp32`, apague o conteúdo da flash do `esp32` e suba o firmware
+```bash
+    make erase && make deploy
+```
