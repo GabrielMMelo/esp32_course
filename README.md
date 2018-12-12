@@ -113,3 +113,19 @@ Ainda no diretório `ports/esp32`, apague o conteúdo da flash do `esp32` e suba
 # mpfshell
 
 Para utilizar o terminal [mpfshell](https://github.com/wendlers/mpfshell) para upload/download de arquivos no `esp32`, utilize o mesmo procedimento adotado no meu [Guia de instalação do micropython no esp8266](https://github.com/GabrielMMelo/esp8266_course#mpfshell)
+
+
+# EXTRA 
+## Fork do micropython com suporte ao uasyncio 2.0 (pfalcon) 
+
+Clone o repositório dentro de `esp-idf`
+```bash
+    git clone https://github.com/pfalcon/micropython
+``` 
+
+Insira o seguinte alias em seu `~/.bashrc`
+```bash
+    alias xtensa-esp32-elf-gcc="xtensa-esp32-elf"
+```
+
+**Os demais passos serão os mesmos do repositório oficial**
