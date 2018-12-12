@@ -24,7 +24,7 @@ Baixe a toolchain
 
 # Instalação da API ESP-IDF
 
-Baixe a API. O `--recursive` garantirá que os submódulos do repositórios, que são essenciais para compilação, também sejam baixados
+Baixe a API. O `--recursive` garantirá que os submódulos do repositório, que são essenciais para compilação, também sejam baixados
 
 ``` bash
     git clone --recursive https://github.com/espressif/esp-idf.git
@@ -109,3 +109,7 @@ Ainda no diretório `ports/esp32`, apague o conteúdo da flash do `esp32` e suba
 ```bash
     make erase && make deploy
 ```
+
+# mpfshell
+
+Para utilizar o terminal [mpfshell](https://github.com/wendlers/mpfshell) para upload/download de arquivos no `esp32`, utilize o mesmo procedimento adotado no meu [Guia de instalação do micropython no esp8266](https://github.com/GabrielMMelo/esp8266_course#mpfshell)
