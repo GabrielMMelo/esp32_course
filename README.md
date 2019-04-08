@@ -112,7 +112,7 @@ Ainda no diretório `ports/esp32`, apague o conteúdo da flash do `esp32` e suba
 
 # mpfshell
 
-Para utilizar o terminal [mpfshell](https://github.com/wendlers/mpfshell) para upload/download de arquivos no `esp32`, utilize o mesmo procedimento adotado no meu [Guia de instalação do micropython no esp8266](https://github.com/GabrielMMelo/esp8266_course#mpfshell)
+Para utilizar o terminal [mpfshell](https://github.com/wendlers/mpfshell) para upload/download de arquivos no `esp32`, utilize o mesmo procedimento adotado no meu [Guia de utilização do micropython para esp8266](https://github.com/GabrielMMelo/esp8266_course#mpfshell)
 
 
 # EXTRA 
