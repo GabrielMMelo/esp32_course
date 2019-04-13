@@ -132,6 +132,7 @@ Insira o seguinte alias em seu `~/.bashrc`
 
 
 ### Links úteis
-[Guia de programação do ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/) (Espressif IoT development framework)
-[Getting started do ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/)
-[Toolchain no Linux](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html)
+- [Guia de programação do ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/) (Espressif IoT development framework)
+- [Getting started do ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/)
+- [Toolchain no Linux](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html)
+- [Getting started Micropython com ESP32](http://docs.micropython.org/en/latest/esp32/tutorial/intro.html#esp32-intro)
