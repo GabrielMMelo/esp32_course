@@ -129,3 +129,9 @@ Insira o seguinte alias em seu `~/.bashrc`
 ```
 
 **Os demais passos serão os mesmos do repositório oficial**
+
+
+### Links úteis
+[Guia de programação do ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/) (Espressif IoT development framework)
+[Getting started do ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/)
+[Toolchain no Linux](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html)
