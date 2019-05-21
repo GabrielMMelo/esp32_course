@@ -1,4 +1,9 @@
-# Instalação da toolchain
+# Curso de ESP32
+[![License: CC BY-ND 4.0](https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nd/4.0/)
+
+Curso introdutório da utilização do dispositivo utilizando [MicroPython](https://micropython.org/).
+
+## Instalação da toolchain
 
 1- Adicione o seguinte trecho ao final do arquivo `~/.bashrc`
 
@@ -22,7 +27,7 @@
     tar zxvf xtensa-esp32-elf-linux64-1.22.0-61-gab8375a-5.2.0.tar.gz
 ```
 
-# Instalação da API ESP-IDF
+## Instalação da API ESP-IDF
 
 4- Baixe a API. O `--recursive` garantirá que os submódulos do repositório, que são essenciais para compilação, também sejam baixados
 
@@ -30,7 +35,7 @@
     git clone --recursive https://github.com/espressif/esp-idf.git
 ```
 
-## Hello World
+### Hello World
 
 5- Copie o exemplo `Hello World` para a pasta atual
 ```bash
@@ -59,14 +64,14 @@ __Antes de executar o__ `make` __, tenha certeza de que possui as permissões ne
 
 Tudo certo até aqui? Prossiga para a instalação do `micropython`
 
-# Instalando o Micropython
+## Instalando o Micropython
 
 9- Tenha certeza de que você está no diretório `esp-idf/` e baixe o micropython
 ```bash
     git clone https://github.com/micropython/micropython-esp32.git
 ```
 
-## Compilando port do esp32
+### Compilando port do esp32
 10- Entre no diretório baixado e compile o mpy-cross
 ```bash
     make -C mpy-cross
@@ -111,7 +116,7 @@ Tudo certo até aqui? Prossiga para a instalação do `micropython`
     make erase && make deploy
 ```
 
-## Compilando port para Unix
+### Compilando port para Unix
 O `Micropython` também pode ser executado em ambientes Unix, como o Linux. Essa pode ser uma boa estratégia para realização de testes e conferências, antes de realizar o deploy para o `esp32`.
 
 19- Compile a port do unix
@@ -125,7 +130,7 @@ O `Micropython` também pode ser executado em ambientes Unix, como o Linux. Essa
     ./micropython
 ```
 
-### `upip`, a versão do `pip` no `Micropython`
+#### `upip`, a versão do `pip` no `Micropython`
 O `upip` é o gerenciador de pacotes do `Micropython` e pode ser útil para realizar o download de módulos do mesmo.
 
 21- Para fazer o download do módulo `machine`, por exemplo:
@@ -134,13 +139,13 @@ O `upip` é o gerenciador de pacotes do `Micropython` e pode ser útil para real
 ```
 
 
-# mpfshell
+## mpfshell
 
 Para utilizar o terminal [mpfshell](https://github.com/wendlers/mpfshell) para upload/download de arquivos no `esp32`, utilize o mesmo procedimento adotado no meu [Guia de utilização do micropython para esp8266](https://github.com/GabrielMMelo/esp8266_course#mpfshell)
 
 
-# EXTRA 
-## Fork do micropython com suporte ao uasyncio 2.0 (pfalcon) 
+## EXTRA 
+### Fork do micropython com suporte ao uasyncio 2.0 (pfalcon) 
 
 Clone o repositório dentro de `esp-idf`
 ```bash
@@ -155,7 +160,7 @@ Insira o seguinte alias em seu `~/.bashrc`
 **Os demais passos serão os mesmos do repositório oficial**
 
 
-### Links úteis
+#### Links úteis
 - [Guia de programação do ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/) (Espressif IoT development framework)
 - [Getting started do ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/)
 - [Toolchain no Linux](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html)
